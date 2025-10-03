@@ -1,0 +1,13 @@
+[build]
+  cmd = "go build -o ./tmp/main ."   # build command
+  bin = "./tmp/main"                 # binary to run
+  include_ext = ["go"]               # only watch .go files
+  exclude_dir = ["tmp", "client"]    # exclude tmp and client dirs
+  exclude_regex = []                 # optional regex-based ignores
+
+[log]
+  level = "debug"
+  time = true
+
+[misc]
+  clean_on_exit = true
